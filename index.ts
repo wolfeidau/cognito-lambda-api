@@ -7,7 +7,6 @@ export function handler(event: any , context: any, callback: (...args: any[]) =>
 
     const responseBody = {
         message: "test",
-        input: event,
     };
 
     const response = {
