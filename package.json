@@ -1,0 +1,27 @@
+{
+  "name": "cognito-lambda-api",
+  "version": "1.0.0",
+  "description": "Lambda API with cognito authoriser.",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "author": "Mark Wolfe <mark@wolfe.id.au>",
+  "license": "MIT",
+  "repository": "https://github.com/wolfeidau/cognito-lambda-api.git",
+  "scripts": {
+    "lint": "tslint .",
+    "pretest": "tsc test/*.test.ts --module commonjs",
+    "test": "mocha",
+    "prepare": "tsc index.ts --module commonjs"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.68",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "aws-sdk": "^2.41.0",
+    "chai": "^4.0.2",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
